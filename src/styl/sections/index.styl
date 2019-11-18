@@ -1,0 +1,557 @@
+.home
+  margin-top 50px
+
+  &-cover
+    margin 120px auto 0 auto
+    width 82%
+
+    &-text
+      &-one
+        color $whiteT1
+        font-size 76px
+        letter-spacing 3.6px
+        line-height 70px
+        text-align center
+        width 425px
+        &.two
+          font-size 55px
+
+    &-intro
+      border-bottom solid 1px $grayT1
+      color $grayT1
+      display block
+      font-size $fs11
+      letter-spacing 4px
+      margin-bottom 30px
+      padding-bottom 11px
+      text-transform uppercase
+      width 319px
+
+      & span
+        color $whiteT1
+        margin-left 22px
+
+    &-slide
+      &.slide-one
+        align-items center
+        background-image url("../img/backgrounds/home-cover-1.jpg")
+        background-position center
+        background-repeat no-repeat
+        background-size cover
+        display flex
+        flex-direction column
+        height 410px
+        padding-top 100px
+
+        & a
+          margin-top 37px
+
+      &.slide-two
+        align-items center
+        background-image url("../img/backgrounds/compliance-penal-cover.jpg")
+        background-position center
+        background-repeat no-repeat
+        background-size cover
+        height 410px
+
+      &.slide-one,
+      &.slide-two
+        & .owl-prev,
+        & .owl-next
+          bottom 72px
+          background-color transparent
+          border none
+          cursor pointer
+          margin 0 auto
+          padding 0
+          position absolute
+          width 27px
+
+        & .owl-prev
+          left 0
+          right 60px
+
+        & .owl-next
+          left 60px
+          right 0
+
+      &.slide-two
+        & .owl-prev,
+        & .owl-next
+          bottom 17%
+          margin 0 0 0 15%
+
+    &-carousel
+      margin 0 0 90px 0
+      position relative
+
+      & .owl-height
+        transition height 0.2s ease-in-out
+
+      & .owl-nav
+        bottom 72px
+        left 0
+        margin 0 auto
+        position absolute
+        right 0
+        width 90px
+
+      & .owl-dots
+        bottom 0
+        display flex
+        flex-direction column
+        justify-content center
+        position absolute
+        right 53px
+        top 0
+
+      & .owl-dot
+        background-color $grayT1 !important
+        border-radius 100px
+        height 4px
+        margin 34px 0
+        width 4px
+
+      & .owl-dot.active
+        position relative
+
+        &:after
+          border solid 1px $grayT1
+          border-radius 100px
+          bottom 0
+          content ""
+          height 10px
+          left -4px
+          margin auto
+          position absolute
+          top 0
+          width 10px
+
+  &-specialists
+    margin-bottom 90px
+
+    &-title
+      color  $blueT3
+      font-size 46px
+      letter-spacing 3.6px
+      line-height 42px
+      margin 0 auto
+      text-align center
+      text-indent 3.6px
+      width 500px
+
+  &-services
+    &-title
+      color  $blueT3
+      font-size $fs11
+      letter-spacing 6.6px
+      text-align center
+      text-indent 6.6px
+      text-transform uppercase
+
+    &-carousel
+      margin 36px auto 85px auto
+      width 819px
+
+    & .owl-stage-outer
+      box-shadow 0 34px 38px 0 rgba(0, 0, 0, 0.5)
+
+    & .owl-nav
+      margin-top 68px
+
+    & .owl-prev
+      margin-right 34px
+
+    & .owl-dots
+      display flex
+      flex-direction column
+      position absolute
+      right -55px
+      top 25px
+
+    & .owl-dot
+        background-color $grayT1 !important
+        border-radius 100px
+        height 4px
+        margin 20px 0
+        width 4px
+
+    & .owl-dot.active
+      position relative
+
+      &:after
+        border solid 1px $grayT1
+        border-radius 100px
+        bottom 0
+        content ""
+        height 10px
+        left -4px
+        margin auto
+        position absolute
+        top 0
+        width 10px
+
+    &-content
+      background-color $blackT1
+      position relative
+
+    &-img
+      height 391px
+      object-fit cover
+      object-position cover
+      opacity 0.5 !important
+      width 273px !important
+
+    &-desc
+      bottom 25px
+      color $whiteT1
+      font-size $fs14
+      left 35px
+      letter-spacing 6.2px
+      line-height 23px
+      position absolute
+      text-transform uppercase
+      width 190px
+
+  &-compliance
+    &-info
+      align-items center
+      display flex
+      flex-direction column
+      margin 25px auto 97px auto
+      width 458px
+
+    &-title
+      color  $blueT3
+      font-size $fs11
+      letter-spacing 6.6px
+      text-align center
+      text-transform uppercase
+
+    &-subtitle
+      color  $blueT3
+      font-size $fs29
+      letter-spacing 8.1px
+      line-height 35px
+      margin-bottom 46px
+      text-align center
+      text-transform uppercase
+
+    &-img
+      height 231px
+      width 196px
+
+      &-container
+        display flex
+        justify-content center
+
+    &-btns
+      display flex
+      flex-direction row
+
+      & a:first-child
+        margin-right 15px
+
+  &-blog
+    margin 110px auto 120px auto
+    position relative
+    width 823px
+
+    &-img
+      height 400px
+      width 823px
+
+    &-headers
+      left 52px
+      position absolute
+      top 45px
+
+    &-title
+      color $whiteT1
+      font-size $fs11
+      letter-spacing 6.6px
+      margin-bottom 15px
+      text-transform uppercase
+
+    &-subtitle
+      color $whiteT1
+      font-size $fs29
+      letter-spacing 8.1px
+      line-height 35px
+      text-transform uppercase
+
+    &-card
+      bottom -78px
+      display flex
+      flex-direction column
+      height 259px
+      justify-content center
+      background-color #ffffff
+      padding 0 55px
+      position absolute
+      right 60px
+      width 523px
+
+      &-date
+        color $blackT1
+        font-size $fs7
+        letter-spacing 3.1px
+        margin-bottom 4px
+        text-transform uppercase
+
+      &-title
+        color $blackT1
+        font-size $fs19
+        letter-spacing 8.1px
+        line-height 35px
+        text-transform uppercase
+
+      &-desc
+        color $blackT1
+        font-size $fs9
+        letter-spacing 1.1px
+        line-height 15px
+        margin 7px 0 19px 0
+
+    & a button
+      color $blackT1
+
+      &:hover
+        color $whiteT1
+
+.compliance
+  &-1
+    margin 101px 0 0 0
+
+  &-2
+    margin 153px 0px 0 103px
+
+  &-3
+    margin 0 16px 0 27px
+
+  &-4
+    margin 101px 82px 0 0
+
+  &-5
+    margin 75px 0 0 0
+
+/*Blog entry styles*/
+.site-base-btn
+  display none
+
+.blog-post-info-container p
+  color $blackT1
+  font-size $fs9
+  letter-spacing 1.1px
+  line-height 15px
+  margin 7px 0 19px 0
+
+@media screen and (max-width 1000px)
+  .home
+    &-cover
+      &-slide
+        &.slide-one,
+        &.slide-two
+          height 290px
+
+        &.slide-one
+          padding-top 64px
+
+        &.slide-two
+          & .owl-prev,
+          & .owl-next
+            bottom 8%
+
+      &-text
+        &-one
+          font-size 60px
+          line-height 66px
+
+    &-services
+      &-carousel
+        & .owl-dots
+          bottom 10px
+          flex-direction row
+          right 0
+          top initial
+
+        & .owl-dot
+          margin 0 20px
+
+@media screen and (max-width 870px)
+  .home
+    &-services
+      &-carousel
+        width 546px
+
+    &-blog
+      margin-bottom 222px
+      padding 0 30px
+      width 100%
+
+      &-img
+        height auto
+        width 100%
+
+      &-card
+        bottom -180px
+        left 0
+        margin 0 auto
+        right 0
+
+@media screen and (max-width 700px)
+  .home
+    &-cover
+      &-slide
+        &.slide-one,
+        &.slide-two
+          height 235px
+
+        &.slide-one
+          padding-top 40px
+
+      &-text
+        &-one
+          font-size 40px
+          line-height 46px
+
+@media screen and (max-width 630px)
+  .home
+    &-cover
+      // &-slide
+      //   &.slide-one
+      //     height 370px
+      //     padding-top 40px
+
+      &-text
+        &-one
+          font-size 45px
+          line-height 50px
+
+      &-carousel
+        & .owl-nav
+          position absolute
+          right 0
+
+        & .owl-dots
+          bottom 72px
+          justify-content flex-end
+
+        & .owl-dot
+          margin 13px 0
+
+    &-specialists
+      &-title
+        font-size 28px
+        line-height 30px
+        width auto
+
+    &-services
+      &-carousel
+        width 273px
+
+        & .owl-nav
+          display flex
+          justify-content center
+          margin-top 50px
+
+        & .owl-dots
+          bottom -40px
+          left 0
+          justify-content center
+          right 0
+
+        & .owl-dot
+          margin 0 10px
+
+      &-desc
+        font-size 12px
+        left 22px
+        width 228px
+
+      &-img
+        height 168px
+
+    &-compliance
+      margin-top 120px
+
+      &-info
+        align-items center
+        margin 32px auto 54px auto
+        width 210px
+
+      &-subtitle
+        font-size 22px
+        letter-spacing 6.2px
+        line-height 25px
+        margin-bottom 37px
+
+      &-img
+        height 193px
+        width 164px
+
+    &-blog
+      &-headers
+        left 30px
+        top -85px
+
+      &-subtitle
+        font-size 25px
+        letter-spacing 6.6px
+
+      &-card
+        bottom -210px
+        height 250px
+        left initial
+        padding 0 25px
+        right 15px
+        width 78%
+
+        &-title
+          font-size 17px
+          letter-spacing 7.3px
+          line-height 20px
+
+  .carousel-arrow
+    height 11px
+    width auto !important
+
+  .compliance
+    &-2
+      margin 34px 0 0 120px
+
+    &-3
+      margin 0 11px
+
+    &-4
+      margin 33px 82px 0 0
+
+@media screen and (max-width 580px)
+  .home
+    &-cover
+      margin-top 95px
+
+      &-slide
+        &.slide-one,
+        &.slide-two
+          height 129px
+
+        &.slide-one
+          padding-top 30px
+
+          & a
+            margin-top 28px
+
+          & .owl-prev,
+          & .owl-next
+            bottom 55px
+
+        &.slide-two
+          & .owl-prev,
+          & .owl-next
+            bottom 8%
+
+      &-text
+        &-one
+          font-size 17px
+          line-height 26px

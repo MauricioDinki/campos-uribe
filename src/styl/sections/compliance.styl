@@ -1,0 +1,271 @@
+.compliance
+  margin-top 50px
+
+  &-cover
+    img
+      width 100%
+
+  &-intro,
+  &-list,
+  &-services,
+  &-ethical
+    width 814px
+
+  &-intro
+    border-bottom solid 1px $grayT1
+    margin 0 auto
+    padding 35px 0
+    // width 814px//78%
+
+    &-desc
+      color $blueT3
+      font-size $fs14
+      letter-spacing 1px
+      line-height 20px
+      margin 0 auto
+      max-width 700px//679px
+      text-align justify//center
+
+      &:first-child
+        &:after
+          background-color $grayT1
+          content ""
+          display block
+          height 1px
+          margin 25px auto
+          width 52px
+
+  &-list
+    display flex
+    flex-direction row
+    margin 46px auto 0 auto
+    height 550px
+    justify-content center
+    // width 814px//78%
+
+    .col1,
+    .col2
+      display flex
+      flex-direction column
+
+    .col1 img,
+    .col2 img
+        height auto
+        width 387px
+
+    .col1
+      margin-right 20px
+      img
+        margin-top 30px
+
+    .col2
+      flex-direction column-reverse
+      justify-content flex-end
+      margin-left 20px
+
+      img
+        margin-bottom 30px
+
+    .info-content
+      background-color #7E8DC2
+      box-shadow 0 22px 44px 0 rgba(0, 0, 0, 0.5);
+      height 100%
+      padding 30px 0 16px 0
+      width 387px
+
+      h6
+        color $whiteT1
+        font-size $fs14
+        letter-spacing 0.6px
+        line-height 21px
+        padding 0 30px 16px 43px
+
+      p
+        color $whiteT1
+        font-size 13px
+        letter-spacing 0.3px
+        line-height 17px
+        padding 5px 25px 5px 43px
+        position relative
+
+        &:before
+          background-image url(../img/icons/icono-revision.svg)
+          content ""
+          display block
+          height 9px
+          left 15px
+          position absolute
+          top 9px
+          width 13px
+
+        &:nth-child(even)
+          background-color #242e5675
+
+  &-services
+    border-bottom solid 1px $grayT1
+    display flex
+    flex-direction row
+    margin 0 auto
+    padding 59px 0 67px 0
+    // width 814px//78%
+
+    img
+      height auto
+      width 387px
+
+    &-info
+      h2
+        border-bottom solid 1px $grayT1
+        color  $blueT3
+        font-size 23px
+        letter-spacing 9px
+        padding-bottom 10px
+
+      p
+        color  $blueT3
+        font-size 13px
+        letter-spacing 1.3px
+        line-height 22px
+        margin 20px 0
+        max-width 415px
+
+      h2, p, a
+        padding-left 44px
+
+      a button
+        background-color $grayT1
+        color white
+
+        &:hover
+          background-color $whiteT1
+          border solid 1px $grayT1
+          color $grayT1
+
+  &-ethical
+    margin 68px auto 40px auto
+    position relative
+    // width 814px//78%
+
+    &-card
+      background-color $whiteT1
+      display flex
+      flex-direction row
+      height auto
+      justify-content center
+      padding 30px 75px
+      width 100%
+
+    &-title
+      color $blackT1
+      font-size 20px
+      letter-spacing 6px
+      text-transform uppercase
+
+    &-desc
+      color $blackT1
+      font-size 14px
+      letter-spacing 1px
+      line-height 17px
+      margin 8px 0 0 0
+      max-width 300px
+
+    &-btns
+      align-items flex-end
+      display flex
+      margin-left 58px
+
+    &-btns a:nth-child(1) button
+      background-color $grayT1
+      margin-right 13px
+      color white
+
+      &:hover
+        background-color $whiteT1
+        color $grayT1
+
+    &-btns a:nth-child(2) button
+      color $grayT1
+
+      &:hover
+        color $whiteT1
+
+@media screen and (min-width 1366px)
+  .compliance
+    &-intro,
+    &-list,
+    &-services,
+    &-ethical
+      width 78%
+
+    &-list
+      justify-content space-around
+
+@media screen and (max-width 880px)
+  .compliance
+    &-intro,
+    &-list,
+    &-services,
+    &-ethical
+      width 85%
+
+    &-intro
+      &-desc
+        font-size 12px
+        padding 0 10px
+
+    &-list
+      align-items center
+      flex-direction column
+      height auto
+
+      .col1
+        margin 0 0 40px 0
+
+      .col2
+        flex-direction column
+        margin 0
+
+        & img
+          margin 30px 0 0 0
+
+    &-services
+      align-items center
+      flex-direction column
+      padding-top 100px
+
+      &-info
+        margin-top 40px
+
+    &-ethical
+      &-card
+        align-items center
+        flex-direction column
+
+      &-title,
+      &-desc
+        text-align center
+
+      &-btns
+        margin 30px 0 0 0
+
+@media screen and (max-width 420px)
+  .compliance
+    &-list
+      .col1,
+      .col2,
+      .col1 img,
+      .col2 img,
+      .info-content
+        width 100%
+
+    &-services
+      &-info
+        p
+          font-size 12px
+
+      img
+        width 100%
+
+    &-ethical
+      &-card
+        padding 30px
