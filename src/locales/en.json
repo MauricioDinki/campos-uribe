@@ -59,6 +59,11 @@
           "viewName": "compliance"
         },
         {
+          "section": "partners",
+          "link": "partners.html",
+          "viewName": "partners"
+        },
+        {
           "section": "about us",
           "link": "/en/about-us.html",
           "viewName": "aboutus"
@@ -76,7 +81,7 @@
       ],
       "copyright": "Copyright® Campos & Campos 2018",
       "privacySection": "Privacy Notice",
-      "privacyLink": "/aviso-privacidad.html",
+      "privacyLink": "/en/privacy.html",
       "privacyViewName": "notice-privacy"
     },
     "home": {
