@@ -29,11 +29,6 @@
           "viewName": "aboutus"
         },
         {
-          "section": "blog",
-          "link": "https://blog.camposuribe.com",
-          "viewName": "blog"
-        },
-        {
           "section": "contact",
           "link": "/en/contact.html",
           "viewName": "contact"

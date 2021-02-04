@@ -2,12 +2,30 @@ server {
   listen 80;
   listen [::]:80;
 
-  root /home/static/project-camposycampos;
+  root /home/mauricio/campos-uribe;
   index index.html index.htm;
 
-  server_name camposuribe.com sandbox.camposycampos.getmore.mx;
+  server_name camposuribe.com;
 
   location / {
       try_files $uri $uri/ =404;
   }
+}
+server {
+    listen 80;
+    server_name camposuribe.com;
+    return 301 https://$server_name$request_uri;
+    client_max_body_size 5M;
+    client_header_timeout 600s;
+}
+
+server {
+    listen 443 ssl ipv6only=on;
+    server_name camposuribe.com;
+    root /home/mauricio/campos-uribe;
+    index index.html index.htm;
+
+    location / {
+        try_files $uri $uri/ =404;
+    }
 }
