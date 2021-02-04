@@ -64,11 +64,6 @@
           "viewName": "aboutus"
         },
         {
-          "section": "blog",
-          "link": "/en/index.html",
-          "viewName": "blog"
-        },
-        {
           "section": "contact",
           "link": "/en/contact.html",
           "viewName": "contact"

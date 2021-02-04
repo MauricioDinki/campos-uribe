@@ -330,11 +330,6 @@
           "viewName": "aboutus"
         },
         {
-          "section": "blog",
-          "link": "http://blog.camposycampos.mx",
-          "viewName": "blog"
-        },
-        {
           "section": "contacto",
           "link": "contacto.html",
           "viewName": "contact"
